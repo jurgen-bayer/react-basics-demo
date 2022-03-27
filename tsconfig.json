@@ -1,26 +1,50 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+    // See https://www.typescriptlang.org/tsconfig
+    "compilerOptions": {
+         // Set to es6/es2015 to get features like constants, and if not to support Internet 
+         // Explorer, Opera Mini, Kaidu and KaiOS.
+        "target": "es6",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        // true allows importing JavaScript files
+        "allowJs": true,
+        // Specifies whether type checking of declaration files is skipped or not
+        "skipLibCheck": true,
+        // true fixes problems with imports
+        "esModuleInterop": true,
+        // true allows imports like import React from "react" instead of import * as React from "react"
+        "allowSyntheticDefaultImports": true,
+        // Enables a wide range of type checking behavior that results in stronger guarantees of program correctness
+        "strict": true,
+        // When this option is set, TypeScript will issue an error if a program tries to include a file by a casing 
+        // different from the casing on disk. This prevents problems with file systems with case-sensitive file naming.
+        "forceConsistentCasingInFileNames": true,
+        // true ensures that any non-empty case inside a switch statement includes either break or return. 
+        // This prevents nasty fall-through bugs.
+        "noFallthroughCasesInSwitch": true,
+        // Sets the EcmaScript version for modules (since ES 2015)
+        "module": "esnext",
+        // Specifies the module resolution strategy. node specifies to use Node.js’ CommonJS implementation. 
+        // node12 or nodenext specifies to use Node.js’ ECMAScript Module Support.
+        "moduleResolution": "node",
+        // true allows importing modules with a .json extension.
+        "resolveJsonModule": true,
+        // true tells TypeScript to warn if code can’t be correctly interpreted by a single-file transpilation process. 
+        // This prevents issues when using other transpilers like Babel.
+        "isolatedModules": true,
+        // true specifies to not emit compiler output files like JavaScript source code, source-maps or declarations. 
+        // This makes room for another tool like Babel, or swc to handle converting the TypeScript file to a file which 
+        // can run inside a JavaScript environment.
+        "noEmit": true,
+        // Controls how JSX constructs are emitted in JavaScript files. 
+        // "react-jsx" results in .js files with the JSX changed to _jsx calls.
+        "jsx": "react-jsx"
+    },
+    "include": [
+        // Include the src folder for transpilation
+        "src"
+    ]
 }
