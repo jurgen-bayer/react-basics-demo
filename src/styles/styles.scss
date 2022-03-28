@@ -8,3 +8,14 @@ body {
    background-color: $background-colour;
    color: $colour;
 }
+
+.menu-caption {
+    margin-left: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.menu-caption-active {
+    font-weight: bold;
+    color: steelblue;
+}

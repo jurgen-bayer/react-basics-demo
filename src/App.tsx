@@ -4,10 +4,10 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-// Import a Material UI icon
-import EmojiEmotions from '@mui/icons-material/EmojiEmotions';
-import { TextField, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { NavigationBar } from './core/components/navigation-bar';
+import { AppRoutes } from './core/components/app-routes';
 
 function App() {
     const darkTheme = createTheme({
@@ -17,15 +17,14 @@ function App() {
       });
     
     return (
-        <ThemeProvider theme={darkTheme}>
-            {/* Enable Material UI typography (h1, h2 etc.) */}
-            <Typography>
-                <h1>React Condensed Demo</h1>
-                {/* Display an icon */}
-                <EmojiEmotions></EmojiEmotions>
-                <TextField id="standard-basic" label="Standard" variant="standard" />
-            </Typography>
-        </ThemeProvider>
+            // Enable the Material UI Theme Provider
+            <ThemeProvider theme={darkTheme}>
+                {/* Enable Material UI typography (h1, h2 etc.) */}
+                <Typography>
+                    <NavigationBar></NavigationBar>
+                    <AppRoutes></AppRoutes>
+                </Typography>
+            </ThemeProvider>
     );
 }
 

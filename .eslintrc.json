@@ -24,5 +24,7 @@
             "version": "detect"
         }
     },
-    "rules": {}
+    "rules": {
+        "no-unused-vars": "warn"
+    }
 }
