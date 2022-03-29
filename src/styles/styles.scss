@@ -3,7 +3,7 @@ $text-colour: whitesmoke;
 
 body {
    margin: 50px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: Roboto,Helvetica,Arial,'sans-serif';
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    background-color: $background-colour;
@@ -22,10 +22,10 @@ body {
 }
 
 h1 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    margin-top: 15px;
-    margin-bottom: 6px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
