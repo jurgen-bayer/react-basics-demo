@@ -1,21 +1,30 @@
 $background-colour: #303030;
-$colour: whitesmoke;
+$text-colour: whitesmoke;
 
 body {
-   margin: 20px;
+   margin: 50px;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    background-color: $background-colour;
-   color: $colour;
+   color: $text-colour;
 }
 
 .menu-caption {
     margin-left: 20px;
-    color: whitesmoke;
+    color: $text-colour;
     text-decoration: none;
 }
 
 .menu-caption-active {
     font-weight: bold;
     color: steelblue;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 6px;
 }
