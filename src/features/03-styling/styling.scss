@@ -1,0 +1,28 @@
+@import '../../styles/styles.scss';
+
+// Dedicated styles for the component. However, React bundles all styles together 
+// and injects them into the page body. This means that this styling-demo class
+// here will be merged with the styling-demo class in styles.scss. One will take
+// precendence over the other. In this case it's the class defined here.
+// Because of this issue it's an anto-pattern to use the same (S)CSS class names.
+.styling-demo {
+    padding: 10px;
+    color: steelblue;
+    font-weight: bold;
+    // Caution: For some reason the background-color here overwrites the 
+    // style in styles.css, and for some reason, this is then global!
+    background-color: #404040;
+    border-radius: 4px;
+}
+
+// Best to name the component styles uniquely and inherit from global styles.
+.better-styling-demo-1 {
+    @extend .better-styling-demo;
+    padding: 10px;
+    color: navy;
+    background-color: #808080;
+    border-radius: 4px;
+}
+
+// There are other solutions. 
+// See https://dev.to/eransakal/how-to-isolate-component-styles-in-react-using-css-modules-mkm

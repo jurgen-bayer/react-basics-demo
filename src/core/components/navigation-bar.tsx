@@ -9,6 +9,7 @@ export function NavigationBar() {
                 <h3><NavLink className={(navData) => navData.isActive ? "menu-caption menu-caption-active" : "menu-caption" } to="/" end>React Basics Demo</NavLink></h3>
                 <NavLink className={(navData) => navData.isActive ? "menu-caption menu-caption-active" : "menu-caption" } to="/jsx">JSX</NavLink>
                 <NavLink className={(navData) => navData.isActive ? "menu-caption menu-caption-active" : "menu-caption" } to="/components">Components</NavLink>
+                <NavLink className={(navData) => navData.isActive ? "menu-caption menu-caption-active" : "menu-caption" } to="/styling">Styling</NavLink>
             </Toolbar>
         </Container>
     </AppBar>

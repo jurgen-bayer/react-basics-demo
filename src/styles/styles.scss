@@ -29,3 +29,34 @@ h2 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+// Global CSS class. However, React bundles all styles together and injects 
+// them into the page body. This means that this styling-demo class
+// here will be merged with the styling-demo class in 03-styling/styling.scss. 
+// One will take precendence over the other. In this case it's the class 
+// in 03-styling/styling.scss. 
+// Because of this issue it's an anto-pattern to use the same (S)CSS class 
+// names for dedicated component styles.
+.styling-demo {
+    // Caution: background-color is overwritten in the styling.scss file 
+    // that actually should only be used in styling.tsx!
+    background-color: yellow; 
+    // border, margin-bottom and text-align are not overwritten in styling.scss, 
+    // but they are passed to the style of elements with this class. 
+    border: solid 2px steelblue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+// Global CSS class, not overwritten. Instead, the better-styling-demo-1 class 
+// in 03-styling/styling.scss inherits from this class.
+.better-styling-demo {
+    border: solid 2px steelblue;
+    padding: 10px;
+    background-color: #606060;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+// There are other solutions. 
+// See https://dev.to/eransakal/how-to-isolate-component-styles-in-react-using-css-modules-mkm

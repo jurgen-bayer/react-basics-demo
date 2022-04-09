@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { isIterationStatement } from 'typescript';
 
 export function JsxComponent() {
     // Some variables uses in the JSX code
