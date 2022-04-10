@@ -18,7 +18,7 @@
         // true allows imports like import React from "react" instead of import * as React from "react"
         "allowSyntheticDefaultImports": true,
         // Enables a wide range of type checking behavior that results in stronger guarantees of program correctness
-        "strict": true,
+        "strict": false,
         // When this option is set, TypeScript will issue an error if a program tries to include a file by a casing 
         // different from the casing on disk. This prevents problems with file systems with case-sensitive file naming.
         "forceConsistentCasingInFileNames": true,

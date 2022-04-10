@@ -3,7 +3,9 @@ import React, { Fragment } from 'react';
 export function HomeComponent() {
     return <Fragment>
         <h1>Home</h1>
-        <div className="styling-demo">div with styling-demo class. Note that the style is merged with the style in 03-styling/styling.scss, and 03-styling/styling.scss wins.</div>
-        <div className="better-styling-demo">div with better-styling-demo class. Note that the style is not overwritten. Instead, 03-styling/styling.scss inherits from this style.</div>
+        <div className="header">Header</div>
+        <div className="box">div with &apos;box&apos; class. Note that the style 
+        does not clash with the style in 03-styling/styling-demo.module.scss, 
+        because 03-styling/styling-demo.module.scss is a Style Module.</div>
     </Fragment> 
 } 

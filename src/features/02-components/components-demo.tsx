@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { SubComponent } from './sub-component';
 
 function functionalComponentAsFunction() {
     return <Fragment>
@@ -7,9 +8,10 @@ function functionalComponentAsFunction() {
     </Fragment>
 }
 
-export function ComponentsComponent() {
+export function ComponentsDemoComponent() {
     return <Fragment>
         <h1>Components</h1>
         {functionalComponentAsFunction()}
+        <SubComponent someString="This is a string passed from the using component" someNumber={42}></SubComponent>
     </Fragment>
 }

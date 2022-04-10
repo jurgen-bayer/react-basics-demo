@@ -1,0 +1,26 @@
+// Dedicated styles for the component. To avoid clashes when React bundles 
+// these styles together with other styles, this file is a style module. 
+// Style modules have a name ending with 'module.css' or 'module.scss'.
+// React renames the styles in Style Modules unuquely, both for the styles
+// and the components where the Style Module is imported and the styles
+// are used.
+.box {
+    background-color: #404040;
+    color: steelblue;
+    border: 4px solid steelblue;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+// Composed style
+.roundedBox {
+    composes: box;
+    border-radius: 8px;
+}
+
+// Global, normal style (not recommended because hard to locate, and
+// may overwrite another global style with the same class name)
+:global .header {
+    font-size: 20px;
+}
